@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="FrontOfficePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>JavaBeans.CouleurProduit</class>
+    <class>JavaBeans.Marque</class>
+    <class>JavaBeans.PanierProduit</class>
+    <class>JavaBeans.ProduitCommandeCouleur</class>
+    <class>JavaBeans.Commande</class>
+    <class>JavaBeans.Administrateur</class>
+    <class>JavaBeans.Categorie</class>
+    <class>JavaBeans.Client</class>
+    <class>JavaBeans.Facture</class>
+    <class>JavaBeans.Panier</class>
+    <class>JavaBeans.Couleur</class>
+    <class>JavaBeans.Produit</class>
+    <class>Beans.Client</class>
+    <class>Beans.Administrateur</class>
+    <class>Beans.Categorie</class>
+    <class>Beans.Commande</class>
+    <class>Beans.Couleur</class>
+    <class>Beans.CouleurProduit</class>
+    <class>Beans.Panier</class>
+    <class>Beans.Produit</class>
+    <class>Beans.Facture</class>
+    <class>Beans.Marque</class>
+    <class>Beans.PanierProduit</class>
+    <class>Beans.ProduitCommande</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ecom_bd"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
